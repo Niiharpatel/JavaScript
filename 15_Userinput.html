@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fun_display() {
+            let first = document.getElementById("fname").value;
+
+            document.getElementById("p1").innerHTML = "Enter name is : " + first;
+
+            return false;
+
+        }
+    </script>
+</head>
+
+<body>
+    <form action="">
+        Enter Your Name:
+        <input type="text" id="fname">
+        <button onclick="return fun_display()">click Here</button>
+    </form>
+    <p id="p1"></p>
+
+</body>
+
+
+
+</html>
