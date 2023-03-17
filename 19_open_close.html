@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var a = "https://www.pexels.com/";
+        var b;
+        function open_fn() {
+            b = window.open(a);
+        }
+
+        function close_fn() {
+            b.window.close();
+        }
+
+        function forward_fn() {
+            window.history.forward()
+        }
+    </script>
+</head>
+
+<body>
+
+
+    <button onclick=" open_fn()">open</button>
+    <button onclick=" close_fn()">close</button>
+    <button onclick=" forward_fn()">Forward</button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+        .dark-mode a {
+            color: white;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../../../fontawesome-free-6.2.1-web/css/all.css">
+</head>
+
+<body>
+    <div>
+        <span class="fa-solid fa-moon"></span>
+
+        <h1>Hello USer</h1>
+        <h3><a href="">Go to next page</a></h3>
+    </div>
+
+
+    <script>
+
+        let icon = document.querySelector(".fa-moon")
+        icon.addEventListener("click", function () {
+            document.body.classList.toggle("dark-mode")
+
+            if (document.body.classList.contains("dark-mode") == true) {
+
+                icon.classList.remove("fa-moon")
+                icon.classList.add("fa-sun")
+
+            } else {
+
+                icon.classList.remove("fa-moon")
+                icon.classList.add("fa-moon")
+            }
+
+        })
+    </script>
+</body>
+
+</html>
