@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="display: flex;gap: 5px;">
+        <div
+            style="border: 2px solid black; height: 50px; width:50px;display: flex;justify-content: center; align-items: center;font-size: 20px;">
+            <div class="hour"></div>
+        </div>
+
+
+        <div
+            style="border: 2px solid black; height: 50px; width:50px;display: flex;justify-content: center; align-items: center;font-size: 20px;">
+            <div class="min"></div>
+        </div>
+
+        <div
+            style="border: 2px solid black; height: 50px; width:50px;display: flex;justify-content: center; align-items: center;font-size: 20px;">
+            <div class="sec"></div>
+        </div>
+    </div>
+
+    <script>
+
+        let counter = setInterval(count_fn, 100000);
+        let start = 0;
+
+        function count_fn() {
+            let num = document.querySelector(".hour");
+            num.innerHTML = ++start;
+
+            if (start == 500) {
+                clearInterval(counter);
+            }
+        }
+
+
+        let minute = setInterval(count_fun, 9900);
+        let go = 0;
+
+        function count_fun() {
+            let number = document.querySelector(".min");
+            number.innerHTML = ++start;
+
+            if (go == 500) {
+                clearInterval(minute);
+            }
+        }
+
+
+
+        let second = setInterval(count_sec, 200);
+        let a = 0;
+
+        function count_sec() {
+            let b = document.querySelector(".sec");
+            b.innerHTML = ++a;
+
+            if (a == 500) {
+                clearInterval(second);
+            }
+        }
+    </script>
+</body>
+
+</html>

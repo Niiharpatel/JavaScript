@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="date_time"></h1>
+    <h1 id="date"></h1>
+    <h1 id="time"></h1>
+
+
+    <script>
+        let d_t = new Date();
+
+        document.getElementById("date_time").innerHTML = d_t;
+
+
+        document.getElementById("date").innerHTML = d_t.getDate() + "-" + (d_t.getMonth() + 1) + "-" + d_t.getFullYear();
+
+
+        document.querySelector("#time").innerHTML = d_t.getHours() + "-" + d_t.getMinutes() + "-" + d_t.getSeconds() + "-" + d_t.getMilliseconds();
+
+
+
+
+    </script>
+</body>
+
+</html>

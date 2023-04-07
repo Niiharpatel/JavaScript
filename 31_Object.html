@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // here person is object & firstname,lastname,mobbileno,dob is property.
+
+        let person = {
+            Firstname: "Nihar",
+            Lastname: "Patel",
+            Mobile_no: 123456789,
+            Date_of_birth: "11-11-99",
+        }
+
+        console.log(person)
+
+        document.writeln(person.Firstname + " " + person.Lastname)
+
+
+        for (const p in person) {
+
+            document.write(person[p] + "<br>")
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
