@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <script>
+      // here document is a object of browser & write is a function.
 
-        // here document is a object of browser & write is a function.
-
-        document.write("Hello World")
+      // document.write("Hello World")
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <p id="paro" style="display: none">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt at,
+      ipsam assumenda unde expedita eos quae id quia mollitia autem totam soluta
+      veritatis blanditiis laboriosam perferendis commodi dolorum iusto? Nam!
+    </p>
+    <button id="btn">click</button>
 
     <script>
-
-        // semicoln is not compulsory.
-
-        document.write("Hello User");
+      // semicoln is not compulsory.
+      let btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        document.getElementById("paro").style.display = "block";
+      });
     </script>
-
-</body>
-
+  </body>
 </html>
