@@ -1,0 +1,16 @@
+body {
+  background-color: rgba(10, 10, 10, 0.854);
+}
+
+* {
+  color: white;
+}
+
+#update {
+  display: none;
+}
+
+.table th {
+  color: white;
+  background-color: rgba(10, 10, 10, 0.854);
+}
