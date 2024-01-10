@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ======================== 1 =======================
+
+      for (let row = 1; row <= 5; row++) {
+        for (let col = 1; col <= 5; col++) {
+          document.write("* ");
+        }
+        document.write("<br/>");
+      }
+
+      // ======================== 2 ========================
+
+      for (let row = 1; row <= 5; row++) {
+        for (let col = 1; col <= row; col++) {
+          document.write("* ");
+        }
+        document.write("<br/>");
+      }
+
+      // ========================= 3 =======================
+
+      for (let row = 1; row <= 5; row++) {
+        for (let col = row; col <= 5; col++) {
+          document.write("* ");
+        }
+        document.write("<br/>");
+      }
+
+      // ========================== 4 =========================
+
+      for (let row = 1; row <= 5; row++) {
+        for (let col = 1; col <= row; col++) {
+          document.write(col + " ");
+        }
+        document.write("<br/>");
+      }
+
+      //   // ======================= 5 =======================
+      for (let row = 1; row <= 5; row++) {
+        for (let col = 1; col <= row; col++) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+
+      //   // ======================= 6 =======================
+
+      for (let row = 1; row <= 5; row++) {
+        for (let col = 1; col <= row; col++) {
+          document.write(row + " ");
+        }
+        document.write("<br/>");
+      }
+
+      // ========================= 7 =========================
+
+      for (let row = 1; row <= 5; row++) {
+        for (let col = 1; col <= row; col++) {
+          document.write(col + " ");
+        }
+        document.write("<br/>");
+      }
+
+      // ========================= 8 =========================
+
+      for (let i = 1; i <= 5; i++) {
+        for (let j = i; j <= 5; j++) {
+          document.write("  ");
+        }
+        for (let j = 1; j <= i; j++) {
+          document.write("* ");
+        }
+        document.write("<br/>");
+      }
+    </script>
+  </body>
+</html>
