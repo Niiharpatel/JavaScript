@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div>
+        <p>Want to know my name?</p>
+        <p id="showName"></p>
+        <br />
+        <button id="btn">Click Here</button>
+        <button id="btn2">Stop</button>
+      </div>
+    </div>
+
+    <script>
+      const showName = document.getElementById("showName");
+      const btn = document.getElementById("btn");
+      const btn2 = document.getElementById("btn2");
+      let setTime;
+      let num = 0;
+
+      //   const showMyName = () => {
+      //     showName.innerHTML = "Loading...";
+
+      //     setTime = setTimeout(() => {
+      //       showName.innerHTML = "Nihar Patel";
+      //     }, 3000);
+      //   };
+
+      //   btn.addEventListener("click", showMyName);
+
+      //   btn2.addEventListener("click", () => {
+      //     clearTimeout(setTime);
+      //     showName.innerHTML = "";
+      //   });
+
+      //   ================ SetInterval ================
+      const showMyName = () => {
+        showName.innerHTML = "Loading...";
+
+        setInt = setInterval(() => {
+          showName.innerHTML = `${num}`;
+          num++;
+        }, 1000);
+      };
+
+      btn.addEventListener("click", showMyName);
+
+      btn2.addEventListener("click", () => {
+        clearInterval(setInt);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="name">Name</label>
+    <input type="text" name="" id="in" />
+
+    <br />
+
+    <label for="">Choose one</label>
+    <select name="iceCreams" id="iceCreams" onchange="selectFun()">
+      <option value="">Select one...</option>
+      <option value="vanilla">Vanilla</option>
+      <option value="chocolate">chocolate</option>
+      <option value="mango">Mango</option>
+    </select>
+
+    <div id="result"></div>
+
+    <script>
+      const selectFun = () => {
+        const input = document.getElementById("in").value;
+        const iceCream = document.getElementById("iceCreams").value;
+        const result = document.getElementById("result");
+
+        result.innerHTML = `Mr ${input} Select ${iceCream} ice-cream flavour`;
+      };
+    </script>
+  </body>
+</html>

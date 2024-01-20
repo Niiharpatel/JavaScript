@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  background-color: blue;
+  padding: 30px;
+}
+
+.btn-div {
+  position: relative;
+  top: 30px;
+}
+
+.btn-div button {
+  border-radius: 20px;
+  padding: 12px 20px;
+  background-color: yellow;
+  border: none;
+  position: absolute;
+  right: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.note {
+  margin-block: 20px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.operation {
+  display: flex;
+  gap: 10px;
+  justify-content: left;
+  /* position: absolute; */
+}
+
+.edit {
+  cursor: pointer;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  height: 154px;
+  width: 237px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+}

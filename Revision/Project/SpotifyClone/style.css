@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;1,200&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.left {
+  width: 25vw;
+  padding: 10px;
+}
+
+.right {
+  width: 75vw;
+  margin-block: 16px;
+}
+
+.home ul li {
+  gap: 15px;
+  display: flex;
+  list-style: none;
+  width: 14px;
+  padding-top: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.home ul li:hover {
+  text-decoration: underline;
+}
+
+.heading {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  padding-top: 14px;
+  align-items: center;
+  padding: 23px 14px;
+  font-size: 13px;
+}
+
+.heading img {
+  width: 20px;
+}
+
+.library {
+  min-height: 80vh;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  font-size: 10px;
+  gap: 13px;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer a {
+  color: grey;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header > * {
+  padding: 20px;
+}
+
+.spotify-playlist {
+  padding: 15px;
+  background-color: rgb(30, 30, 31);
+}
+
+.spotify-playlist .card {
+  width: 210px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #171717;
+  position: relative;
+  cursor: pointer;
+}
+
+.card > * {
+  padding: px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 30px;
+}
+
+.play {
+  background-color: #1fdf64;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+  box-shadow: 0px 15px 42px 0.5px black;
+}
+
+.card .play {
+  position: absolute;
+  right: 16px;
+  bottom: 70px;
+}
+
+.card:hover .play {
+  opacity: 1;
+  right: 16px;
+  bottom: 89px;
+}
