@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColorChanger</title>
+    <link rel="stylesheet" href="../../src/output.css" />
+    <style>
+      /* body {
+        background-color: black;
+        color: white;
+      } */
+
+      .main {
+        min-height: 100vh;
+        min-width: 100vw;
+      }
+      .button {
+        height: 100px;
+        width: 100px;
+        border: 5px solid black;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main flex flex-col justify-center items-center gap-5 p-10">
+      <h1>Color Scheme Switcher</h1>
+
+      <div class="box_main flex flex-wrap justify-center items-center gap-5">
+        <div class="button bg-gray-600" id="grey"></div>
+        <div class="button bg-red-600" id="red"></div>
+        <div class="button bg-blue-600" id="blue"></div>
+        <div class="button bg-green-600" id="green"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

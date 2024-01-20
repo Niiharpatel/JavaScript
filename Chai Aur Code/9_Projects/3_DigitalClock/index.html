@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 97vh;
+        width: 98vw;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      #clock {
+        background-color: orange;
+        padding: 30px 60px;
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div id="banner"><span>Your local time</span></div>
+      <div id="clock"></div>
+    </div>
+
+    <script src="Script.js"></script>
+  </body>
+</html>
