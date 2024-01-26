@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="org">Orange</button>
+    <button id="grn">Green</button>
+
+    <script>
+      //   document.getElementById("org").onclick = function () {
+      //     document.body.style.backgroundColor = `orange`;
+      //   };
+      //   document.getElementById("grn").onclick = function () {
+      //     document.body.style.backgroundColor = `green`;
+      //   };
+
+      // -------------------------- OR -----------------------------
+
+      function clickHandler(color) {
+        // document.body.style.backgroundColor = `${color}`;
+
+        return function () {
+          document.body.style.backgroundColor = `${color}`;
+        };
+      }
+
+      document.getElementById("org").onclick = clickHandler("orange");
+      document.getElementById("grn").onclick = clickHandler("green");
+    </script>
+  </body>
+</html>
