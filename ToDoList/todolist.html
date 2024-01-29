@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDoList</title>
+    <style>
+      body {
+        background-color: rgb(197, 195, 195);
+      }
+
+      .todoLists {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .todoLists li {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Todo List</h1>
+    <form>
+      <div style="display: flex; align-items: center; justify-content: center">
+        <input type="text" id="todoValue" />
+        <button style="margin: 10px" id="btn">Add</button>
+      </div>
+
+      <div class="todoLists"></div>
+    </form>
+
+    <script>
+      const todoLists = document.querySelector(".todoLists");
+      const todoValue = document.querySelector("#todoValue");
+
+      let listValue = [];
+
+      const getTodoLocalStorage = () => {
+        return JSON.parse(localStorage.getItem("todoData")) || [];
+      };
+
+      const addToLocalStorage = (todo) => {
+        return localStorage.setItem("todoData", JSON.stringify(todo));
+      };
+
+      const showList = () => {
+        listValue = getTodoLocalStorage();
+        listValue.forEach((curTodo) => {
+          const li = document.createElement("li");
+          li.innerHTML = curTodo;
+
+          todoLists.append(li);
+        });
+      };
+
+      showList();
+
+      document.getElementById("btn").addEventListener("click", (e) => {
+        e.preventDefault();
+        // console.log("clicked");
+
+        listValue = getTodoLocalStorage();
+        let newTodo = todoValue.value.trim();
+
+        todoValue.value = "";
+
+        if (newTodo.length !== 0 && !listValue.includes(newTodo)) {
+          listValue.push(newTodo);
+
+          //   listValue = [...new Set(listValue)];
+
+          addToLocalStorage(listValue);
+
+          const li = document.createElement("li");
+          li.innerHTML = newTodo;
+
+          todoLists.append(li);
+        }
+      });
+
+      todoLists.addEventListener("click", (e) => {
+        // console.log(e.target.textContent);
+        // console.log(listValue);
+
+        let currentTodo = e.target;
+
+        updatedList = listValue.filter(
+          (curTodoValue) => curTodoValue !== currentTodo.textContent
+        );
+
+        // console.log(updatedList);
+
+        addToLocalStorage(updatedList);
+
+        currentTodo.remove();
+      });
+    </script>
+  </body>
+</html>
