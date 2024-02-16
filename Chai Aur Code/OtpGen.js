@@ -9,3 +9,5 @@ function otpGenerator(number) {
 }
 
 console.log(otpGenerator(4));
+
+// console.log(null === 0);
