@@ -40,6 +40,19 @@
 
     <!-- ======================================================== -->
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+
+    <input type="color" id="inp" />
+
+    <button id="btn">Add</button>
+
+    <script>
+      let btn = document.getElementById("btn");
+      let inp = document.getElementById("inp");
+
+      inp.addEventListener("change", () => {
+        btn.style.backgroundColor = inp.value;
+      });
+    </script>
   </body>
 </html>
