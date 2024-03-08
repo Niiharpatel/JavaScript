@@ -596,4 +596,30 @@
 
 // ====================================
 
-console.log(4 == "4");
+// console.log(4 == "4");
+
+// ====================================================
+
+// user = {
+//   name: "Nihar",
+//   id: 213,
+//   age: 24,
+// };
+
+// Object.defineProperties(user, {
+//   id: { writable: false },
+// });
+
+// user.id = 123;
+// console.log(user);
+
+// ============================
+
+const user = Object.freeze({
+  name: "Nihar",
+  age: 24,
+});
+
+user.name = "guru";
+
+console.log(user);
