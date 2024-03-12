@@ -133,7 +133,7 @@
 // let newArr = arr.reduce((eccumulator, ele) => {
 //   debugger;
 //   return (eccumulator += ele);
-// },7);
+// }, 7);
 // console.log("  newArr:", newArr);
 
 // ====================== IIFE ===============================
@@ -255,6 +255,8 @@
 //   console.log("main  data:", data);
 // }
 
+// main();
+
 // ================================== EVENTS =========================================
 
 // const eventFun = () => {
@@ -285,8 +287,7 @@
 // ---------------------------------- Hoisting ----------------------------------------
 
 // console.log(myName);
-// var myName;
-// myName = "Nihar";
+// var myName = "Nihar";
 
 // -> how it works
 
@@ -306,7 +307,7 @@
 //     console.log(a + b + c);
 //   }
 //   second();
-// //   console.log(a + b + c);
+//   //   console.log(a + b + c);
 // }
 
 // first();
@@ -615,11 +616,11 @@
 
 // ============================
 
-const user = Object.freeze({
-  name: "Nihar",
-  age: 24,
-});
+// const user = Object.freeze({
+//   name: "Nihar",
+//   age: 24,
+// });
 
-user.name = "guru";
+// user.name = "guru";
 
-console.log(user);
+// console.log(user);
