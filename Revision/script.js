@@ -624,3 +624,15 @@
 // user.name = "guru";
 
 // console.log(user);
+
+// ==============================================
+
+// const obj = {
+//   1: "a",
+//   2: "b",
+//   3: "c",
+//   length: 3,
+// };
+
+// const arr = Array.from(obj);
+// console.log("arr:", arr);
