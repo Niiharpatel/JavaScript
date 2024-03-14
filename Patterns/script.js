@@ -15,18 +15,30 @@
 // let newArr = [...new Set(arr)].sort().reverse();
 // console.log("newArr:", newArr);
 
-let arr = [2, 6, 1, 9, 10];
+// ======================================================
 
-let largest = 0;
-secLarge = 0;
+// let arr = [2, 6, 1, 9, 10];
 
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i] > largest) {
-    largest = arr[i];
-  }
+// let largest = 0;
+// secLarge = 0;
 
-  if (secLarge < largest) {
-  }
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > largest) {
+//     largest = arr[i];
+//   }
+
+//   if (secLarge < largest) {
+//   }
+// }
+
+// console.log("largest:", largest);
+
+// =====================================================
+
+// for (var i = 1; i <= 4; i++) {
+//   console.log("* ".repeat(i));
+// }
+
+for (let i = 1; i <= 4; i++) {
+  console.log("1 ".repeat(i));
 }
-
-console.log("largest:", largest);

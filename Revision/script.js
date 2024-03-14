@@ -624,3 +624,29 @@
 // user.name = "guru";
 
 // console.log(user);
+
+// ==============================================
+
+// const obj = {
+//   1: "a",
+//   2: "b",
+//   3: "c",
+//   length: 3,
+// };
+
+// const arr = Array.from(obj);
+// console.log("arr:", arr);
+
+// =============================================
+
+let a = [4, 10, 20, 23, 9, 11];
+
+for (let i = 0; i < a.length; i += 2) {
+  if (i + 1 < a.length) {
+    let temp = a[i];
+    a[i] = a[i + 1];
+    a[i + 1] = temp;
+  }
+}
+
+console.log(a); // Output: [10, 4, 23, 20, 11, 9]
