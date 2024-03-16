@@ -636,6 +636,7 @@
 
 // const arr = Array.from(obj);
 // console.log("arr:", arr);
+<<<<<<< HEAD
 
 // =============================================
 
@@ -650,3 +651,5 @@ for (let i = 0; i < a.length; i += 2) {
 }
 
 console.log(a); // Output: [10, 4, 23, 20, 11, 9]
+=======
+>>>>>>> cfcf594d5a5bbfa0e416a1a0ca6cbbc2cfed2b48
