@@ -124,9 +124,11 @@
 
       // ========================= 11 =========================
 
-      // for (let row = 1; row <= 4; row++) {
-      //   for (let col = 1; col <= 5 - row; col++) {
-      //     document.write(" *");
+      // let n = 5;
+
+      // for (let row = 1; row <= n; row++) {
+      //   for (let col = 1; col <= n + 1 - row; col++) {
+      //     document.write("* ");
       //   }
       //   document.write("<br/>");
       // }
@@ -169,9 +171,8 @@
       //   for (let col = 1; col <= 2 * n - 1; col = col + 2) {
       //     document.write(" ", col);
       //   }
-
+      //   document.write("<br>");
       // }
-      // document.write("<br/>");
 
       // ========================= 16 =========================
 
@@ -244,19 +245,203 @@
 
       // ========================= 20 =========================
 
-      let n = 5;
+      // let n = 5;
+
+      // for (let row = 1; row <= n; row++) {
+      //   for (let col = 1; col <= n; col++) {
+      //     if (row == 3 || col == 3) {
+      //       document.write(" * ");
+      //     } else {
+      //       document.write("&nbsp");
+      //     }
+      //   }
+
+      //   document.write("<br/>");
+      // }
+
+      // ========================= 21 =========================
+
+      // let n = 5;
+
+      // for (let row = 1; row <= n; row++) {
+      //   for (let col = 1; col <= n; col++) {
+      //     if (row == col || row + col == n + 1) {
+      //       document.write(" *");
+      //     } else {
+      //       document.write("&nbsp");
+      //     }
+      //   }
+      //   document.write("<br/>");
+      // }
+      //   document.write("<br/>");
+
+      // ========================= 22 =========================
+
+      // let n = 4;
+      // let a = 1;
+
+      // for (let row = 1; row <= n; row++) {
+      //   for (let col = 1; col <= row; col++) {
+      //     document.write(" ", a);
+      //     a++;
+      //   }
+      //   document.write("<br/>");
+      // }
+
+      // ========================= 23 =========================
+
+      // let n = 4;
+      // let a = 1;
+
+      // for (let row = 1; row <= n; row++) {
+      //   for (let col = 1; col <= row; col++) {
+      //     document.write(" ", a);
+      //     a = a + 2;
+      //   }
+      //   document.write("<br/>");
+      // }
+
+      // ========================= 24 =========================
+
+      // let n = 4;
+
+      // for (let row = 1; row <= n; row++) {
+      //   for (let col = 1; col <= row; col++) {
+      //     if ((row + col) % 2 == 0) document.write(" 1");
+      //     else document.write(" 0");
+      //   }
+      //   document.write("<br/>");
+      // }
+
+      // ========================= 25 =========================
+
+      // let n = 4;
+
+      // for (let row = 1; row <= n; row++) {
+      //   for (let col = 1; col <= n - row; col++) {
+      //     document.write("&nbsp");
+      //   }
+      //   for (let str = 1; str <= row; str++) {
+      //     document.write(" *");
+      //   }
+      //   document.write("<br/>");
+      // }
+
+      // ========================= 26 =========================
+
+      // let n = 4;
+
+      // for (let row = 1; row <= n; row++) {
+      //   for (let col = 1; col <= n - row; col++) {
+      //     document.write("&nbsp");
+      //   }
+      //   for (let str = 1; str <= n; str++) {
+      //     document.write("  *");
+      //   }
+      //   document.write("<br/>");
+      // }
+
+      // ========================= 27 =========================
+
+      // let n = 4;
+      // for (let row = 1; row <= n; row++) {
+      //   let a = 1;
+      //   for (let col = 1; col <= n - row; col++) {
+      //     document.write(" &nbsp");
+      //   }
+      //   for (let str = 1; str <= row; str++) {
+      //     let d = a + 64;
+      //     let ch = String.fromCharCode(d);
+      //     document.write("  ", ch);
+      //     a++;
+      //   }
+      //   document.write("<br/>");
+      // }
+
+      // ========================= 28 =========================
+
+      let n = 4;
+      let nst = 1;
+      let nsp = 3;
 
       for (let row = 1; row <= n; row++) {
-        for (let col = 1; col <= n; col++) {
-          if (row == 3 || col == 3) {
-            document.write(" * ");
-          } else {
-            document.write(" ");
-          }
+        for (let col = 1; col <= nsp; col++) {
+          document.write(" &nbsp");
         }
-
+        nsp--;
+        for (let str = 1; str <= nst; str++) {
+          document.write(" *");
+        }
+        nst += 2;
         document.write("<br/>");
       }
+
+      // ========================= 29 =========================
+
+      // let n = 4;
+      // let nst = 1;
+      // let nsp = n - 1;
+
+      // for (let row = 1; row <= n; row++) {
+      //   for (let col = 0; col <= nsp; col++) {
+      //     document.write(" &nbsp");
+      //   }
+      //   nsp--;
+      //   for (let str = 1; str <= nst; str++) {
+      //     document.write(" ", str);
+      //   }
+      //   nst += 2;
+      //   document.write("<br/>");
+      // }
+
+      // ========================= 30 =========================
+
+      // let n = 4;
+      // let nsp = n - 1;
+
+      // for (let row = 1; row <= n; row++) {
+      //   for (let col = 1; col <= nsp; col++) {
+      //     document.write(" &nbsp");
+      //   }
+      //   nsp--;
+      //   for (let col = 1; col <= row; col++) {
+      //     document.write(" ", col);
+      //   }
+
+      //   let a = row - 1;
+
+      //   for (let k = 1; k <= row - 1; k++) {
+      //     document.write(" ", a);
+      //     a--;
+      //   }
+      //   document.write("<br/>");
+      // }
+
+      // ========================= 31 =========================
+
+      // let n = 5;
+      // let nsp = n / 2;
+      // let nst = 1;
+
+      // for (let i = 1; i <= n; i++) {
+      //   for (let j = 1; j <= nsp; j++) {
+      //     document.write("#" + " ");
+      //   }
+      //   for (let k = 1; k <= nst; k++) {
+      //     document.write("*" + " ");
+      //   }
+      //   if (i < n / 2 + 1) {
+      //     nsp--;
+      //     nst += 2;
+      //   } else {
+      //     nsp++;
+      //     nst -= 2;
+      //   }
+
+      //   document.write("<br>");
+      // }
+
+      // =====================================
     </script>
   </body>
 </html>
