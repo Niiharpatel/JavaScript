@@ -1,8 +1,4 @@
-// Find the longest word from a string..
-
 function findLongestWord(str) {
-  debugger;
-
   if (str.trim().length === 0) {
     return false;
   }
