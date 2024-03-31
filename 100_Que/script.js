@@ -67,17 +67,31 @@
 
 // => Write a function that take two parameter: a string and a character to count.
 
-const countChar = (word, char) => {
-  word = word.toLowerCase();
-  char = char.toLowerCase();
+// const countChar = (word, char) => {
+//   word = word.toLowerCase();
+//   char = char.toLowerCase();
 
-  totalCount = word.split("").reduce((acc, curChar) => {
-    if (curChar === char) {
-      acc += 1;
-    }
-    return acc;
-  }, 0);
-  console.log(totalCount);
+//   totalCount = word.split("").reduce((acc, curChar) => {
+//     if (curChar === char) {
+//       acc += 1;
+//     }
+//     return acc;
+//   }, 0);
+//   console.log(totalCount);
+// };
+
+// countChar("MissIssippi", "I");
+
+//===================================================================================
+
+const checkTriangle = (a, b, c) => {
+  if (a === b && b === c) {
+    console.log('Triangle is equilateral');
+  } else if (a === b || b === c || a === c) {
+    console.log('Triangle is isosceles');
+  } else if (a !== b && b !== c) {
+    console.log('Triangle is scalene');
+  }
 };
 
-countChar("MissIssippi", "I");
+checkTriangle(2, 2, 3);
