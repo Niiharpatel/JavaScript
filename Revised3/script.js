@@ -70,6 +70,82 @@
 
 // =============================== Array ================================
 
-const arr = ['apple', 'banana', 'grapes', 'dates'];
+// const arr = ['apple', 'banana', 'grapes', 'dates'];
 
-arr[2] = 'cherry';
+// arr[2] = 'cherry';
+
+// let i = 0;
+
+// while (i < arr.length) {
+//   console.log(arr[i]);
+//   i++;
+// }
+
+// =============
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+
+// for (let i = 1; i < 50; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// =========================
+
+// let i = 0;
+
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < 10);
+
+// ====================== FUNCTION =============================
+
+// function introduce(username) {
+//   console.log('introduce  username:', username || 'Nihar');
+// }
+
+// introduce('Guru');
+// introduce();
+
+// ===================== SETTIMEOUT & SETINTERVAL ====================
+
+// setTimeout(() => {
+//   console.log('HEllo');
+// }, 2000);
+
+// console.log('Hello');
+
+// function hello() {
+//   console.log('Hello');
+// }
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+// hello();
+// setTimeout(hello, 12000);
+
+// console.log('hii-2');
+
+// ===================== METHOD ===========================
+
+// const maths = {
+//   add: function (a, b) {
+//     return a + b;
+//   },
+//   square: function (num) {
+//     return num * num;
+//   },
+// };
+
+// ================= ARROW FUNCTION ================
+
+const add = (a, b) => {
+  return a + b;
+};
+
+console.log(add(1, 2));
