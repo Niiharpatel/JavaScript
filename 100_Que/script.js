@@ -237,3 +237,33 @@
 // Factorial for n = 4 is 24
 // Factorial for n = 5 is 120
 // Final result: 120
+
+//================================= Day-9 ==================================================
+// =>calculate average
+
+// const calAverage = (arr) => {
+//   let total = arr.reduce((acc, cur) => {
+//     return acc + cur;
+//   });
+
+//   let avg = total / arr.length;
+//   console.log('calAverage  avg:', avg);
+// };
+
+// calAverage([2, 3, 1, 5]);
+
+//================================= Day-10 ==================================================
+
+// =>Check array is same or not
+
+const arrayCheck = (arr1, arr2) => {
+  if (arr1.length !== arr2.length) {
+    return false;
+  }
+
+  return arr1.every((ele, ind) => ele === arr2[ind]);
+};
+
+console.log(arrayCheck([1, 2, 3], [1, 2, 3]));
+console.log(arrayCheck([1, 2, 3], [1, 2, 4]));
+console.log(arrayCheck([], []));
