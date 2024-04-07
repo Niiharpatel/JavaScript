@@ -249,3 +249,97 @@
 //   return acc + cur;
 // }, 0);
 // console.log('total  total:', total);
+
+// =========================== SOME & EVERY ==================================
+
+// const arr = [1, 2, 3, 4];
+
+// let result = arr.some((ele, ind, arr) => {
+//   return ele > 3;
+// });
+// console.log('result:', result);
+
+// ==============================
+
+// let result = arr.every((ele, ind, arr) => {
+//   return ele > 3;
+// });
+
+// console.log(result);
+
+// =================================================
+
+// function addition() {
+//   let sum = 0;
+//   for (let i = 0; i < arguments.length; i++) {
+//     sum += arguments[i];
+//   }
+//   console.log('addition  sum:', sum);
+// }
+
+// addition(1, 2, 3);
+
+// ======================= REST PARAMETER =====================
+
+// const addition = (a, b, ...rest) => {
+//   console.log(a, b, ...rest);
+// };
+
+// addition(1, 2, 3, 4, 5);
+
+// ================== SHAllow Copy =====================
+
+// let arr = [1, 2, 3, 4];
+
+// let newarr = arr;
+
+// newarr[0] = 0;
+
+// console.log('newarr:', newarr);
+// console.log('arr:', arr);
+
+// ===================== Destructure =========================
+
+// const colors = ['red', 'black', 'yellow', 'green'];
+
+// const [color1, color2, othercolor] = colors;
+// const [, , color3] = colors;
+
+// console.log('color1:', color1);
+// console.log('color2:', color2);
+// console.log('color2:', othercolor);
+// console.log('color3:', color3);
+
+// const { 2: color } = colors;
+// console.log('color:', color);
+// ============================================
+
+const user = {
+  name: 'nihar',
+  age: 24,
+  add: {
+    city: 'valsad',
+    state: 'gujarat',
+  },
+};
+
+// const { name, age } = user;
+
+// console.log('name:', name);
+// console.log('age:', age);
+
+// const { name: username } = user;
+// console.log('username:', username);
+
+// => Multilevel Destructure:
+
+// const {
+//   add: { city },
+// } = user;
+// console.log('city:', city);
+
+// =====================
+function userFun({ age }) {
+  console.log(age);
+}
+userFun(user);

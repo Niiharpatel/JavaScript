@@ -256,14 +256,52 @@
 
 // =>Check array is same or not
 
-const arrayCheck = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
+// const arrayCheck = (arr1, arr2) => {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
 
-  return arr1.every((ele, ind) => ele === arr2[ind]);
+//   return arr1.every((ele, ind) => ele === arr2[ind]);
+// };
+
+// console.log(arrayCheck([1, 2, 3], [1, 2, 3]));
+// console.log(arrayCheck([1, 2, 3], [1, 2, 4]));
+// console.log(arrayCheck([], []));
+
+//================================= Day-11 ==================================================
+
+// const sumOfDigits = (num) => {
+//   let arr = Array.from(String(num), Number);
+
+//   return arr.reduce((acc, cur) => (acc += cur), 0);
+// };
+
+// console.log(sumOfDigits(1234));
+// console.log(sumOfDigits(124));
+
+// =================================================
+// const sumOfDigits = (num) => {
+//   return num
+//     .toString()
+//     .split('')
+//     .reduce((acc, cur) => (acc += Number(cur)), 0);
+
+//   //   return ans;
+// };
+
+// console.log(sumOfDigits(1234));
+// console.log(sumOfDigits(124));
+
+//================================= Day-12 ==================================================
+
+// =>Remove Duplicate
+
+const removeDuplicate = (arr) => {
+  let newArr = [...new Set(arr)];
+  console.log('newArr:', newArr);
 };
 
-console.log(arrayCheck([1, 2, 3], [1, 2, 3]));
-console.log(arrayCheck([1, 2, 3], [1, 2, 4]));
-console.log(arrayCheck([], []));
+removeDuplicate([1, 2, 3, 4, 2, 1]);
+removeDuplicate([5, 6, 7, 7, 8, 8, 9]);
+removeDuplicate([1, 2, 3]);
+removeDuplicate([]);
