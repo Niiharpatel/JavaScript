@@ -353,3 +353,19 @@
 // const img = document.querySelectorAll('#jsimg');
 
 // let para = document.querySelector('p');
+
+const links = document.querySelectorAll('a');
+
+// for (let i = 0; i < links.length; i++) {
+//   links[i].style.color = 'teal';
+// }
+
+for (const link of links) {
+  //   link.style.color = 'hotpink';
+  //   link.style.textDecoration = 'none';
+  //   link.style.fontFamily = 'cursive';
+  //   link.style.cssText = `
+  //     color:red;
+  //     font-size = 3rem;
+  //   `;
+}
