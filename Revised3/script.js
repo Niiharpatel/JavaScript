@@ -354,18 +354,54 @@
 
 // let para = document.querySelector('p');
 
-const links = document.querySelectorAll('a');
+// const links = document.querySelectorAll('a');
 
 // for (let i = 0; i < links.length; i++) {
 //   links[i].style.color = 'teal';
 // }
 
-for (const link of links) {
-  //   link.style.color = 'hotpink';
-  //   link.style.textDecoration = 'none';
-  //   link.style.fontFamily = 'cursive';
-  //   link.style.cssText = `
-  //     color:red;
-  //     font-size = 3rem;
-  //   `;
-}
+// for (const link of links) {
+//   link.style.color = 'hotpink';
+//   link.style.textDecoration = 'none';
+//   link.style.fontFamily = 'cursive';
+//   link.style.cssText = `
+//     color:red;
+//     font-size = 3rem;
+//   `;
+// }
+
+// ==============================================
+
+// const arr = ['nihar', 'guru', 'nivi'];
+
+// const heading = document.querySelector('#heading');
+
+// heading.addEventListener('click', changeContent());
+
+// function changeContent() {
+//   let index = 0;
+
+//   return function () {
+//     if (index < arr.length) {
+//       heading.innerText = arr[index];
+//       index++;
+//     } else {
+//       index = 0;
+//     }
+//   };
+// }
+
+// ======================================
+
+// var x = 20;
+
+// function foo() {
+//   console.log(x);
+//   var x = 10;
+// }
+
+// foo();
+
+// ======================================
+// console.log(1 < 2 < 3);
+// console.log(3 > 2 > 1);
