@@ -314,14 +314,14 @@
 // console.log('color:', color);
 // ============================================
 
-const user = {
-  name: 'nihar',
-  age: 24,
-  add: {
-    city: 'valsad',
-    state: 'gujarat',
-  },
-};
+// const user = {
+//   name: 'nihar',
+//   age: 24,
+//   add: {
+//     city: 'valsad',
+//     state: 'gujarat',
+//   },
+// };
 
 // const { name, age } = user;
 
@@ -339,7 +339,17 @@ const user = {
 // console.log('city:', city);
 
 // =====================
-function userFun({ age }) {
-  console.log(age);
-}
-userFun(user);
+// function userFun({ age }) {
+//   console.log(age);
+// }
+// userFun(user);
+
+// ====================== Selectors =======================
+
+// const list = document.getElementById('list');
+// const img = document.getElementsByClassName('img1');
+// const images = document.getElementsByTagName('img');
+// const list = document.querySelector('.img1');
+// const img = document.querySelectorAll('#jsimg');
+
+// let para = document.querySelector('p');

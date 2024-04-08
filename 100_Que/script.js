@@ -296,12 +296,33 @@
 
 // =>Remove Duplicate
 
-const removeDuplicate = (arr) => {
-  let newArr = [...new Set(arr)];
-  console.log('newArr:', newArr);
+// const removeDuplicate = (arr) => {
+//   let newArr = [...new Set(arr)];
+//   console.log('newArr:', newArr);
+// };
+
+// removeDuplicate([1, 2, 3, 4, 2, 1]);
+// removeDuplicate([5, 6, 7, 7, 8, 8, 9]);
+// removeDuplicate([1, 2, 3]);
+// removeDuplicate([]);
+
+//================================= Day-13 ==================================================
+// => Find the vowels..
+
+const countVowels = (str) => {
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  let arr = str.split('');
+
+  let count = 0;
+
+  for (const char of arr) {
+    if (vowels.includes(char.toLowerCase())) {
+      count++;
+    }
+  }
+
+  return count;
 };
 
-removeDuplicate([1, 2, 3, 4, 2, 1]);
-removeDuplicate([5, 6, 7, 7, 8, 8, 9]);
-removeDuplicate([1, 2, 3]);
-removeDuplicate([]);
+console.log(countVowels('Hello world'));
