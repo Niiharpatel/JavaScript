@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 80px;
+}
+
+.img_div {
+  text-align: center;
+}

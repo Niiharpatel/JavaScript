@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+}
+
+.heading {
+  color: white;
+}
+
+.card {
+  border: 5px solid hotpink;
+  padding: 50px;
+  font-size: 2em;
+  font-family: cursive;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container {
+  color: hotpink;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.main_card {
+  border: none;
+  color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: cadetblue;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
