@@ -1,0 +1,14 @@
+#container {
+  padding: 50px;
+  background-color: cadetblue;
+}
+
+#parent {
+  padding: 50px;
+  background-color: violet;
+}
+
+#child {
+  padding: 50px;
+  background-color: brown;
+}

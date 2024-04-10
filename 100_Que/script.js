@@ -309,20 +309,44 @@
 //================================= Day-13 ==================================================
 // => Find the vowels..
 
-const countVowels = (str) => {
-  let vowels = ['a', 'e', 'i', 'o', 'u'];
+// const countVowels = (str) => {
+//   let vowels = ['a', 'e', 'i', 'o', 'u'];
 
-  let arr = str.split('');
+//   let arr = str.split('');
 
-  let count = 0;
+//   let count = 0;
 
-  for (const char of arr) {
-    if (vowels.includes(char.toLowerCase())) {
-      count++;
-    }
-  }
+//   for (const char of arr) {
+//     if (vowels.includes(char.toLowerCase())) {
+//       count++;
+//     }
+//   }
 
-  return count;
-};
+//   return count;
+// };
 
-console.log(countVowels('Hello world'));
+// console.log(countVowels('Hello world'));
+
+//================================= Day-14 ==================================================
+
+// const isPowerOfTwo = (num) => {
+//   return num % 2 === 0 ? true : false;
+// };
+
+// console.log(isPowerOfTwo(8));
+// console.log(isPowerOfTwo(7));
+// console.log(isPowerOfTwo(9));
+// console.log(isPowerOfTwo(4));
+
+// ===================================================
+
+const arr = [1, 4, 2, 6];
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] > arr[i + 1]) {
+//     arr[i] = arr[i + 1];
+//   }
+// }
+// console.log(arr);
+
+console.log(arr.sort((a, b) => b - a));
