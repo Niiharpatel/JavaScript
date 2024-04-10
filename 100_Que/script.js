@@ -340,7 +340,7 @@
 
 // ===================================================
 
-const arr = [1, 4, 2, 6];
+// const arr = [1, 4, 2, 6];
 
 // for (let i = 0; i < arr.length; i++) {
 //   if (arr[i] > arr[i + 1]) {
@@ -349,4 +349,28 @@ const arr = [1, 4, 2, 6];
 // }
 // console.log(arr);
 
-console.log(arr.sort((a, b) => b - a));
+// console.log(arr.sort((a, b) => b - a));
+
+//================================= Day-13 ==================================================
+
+// const sumOfSquare = (arr) => {
+//   return arr.reduce((acc, cur) => (acc += cur * cur), 0);
+// };
+
+// console.log(sumOfSquare([1, 2, 3]));
+
+// ====================== OR ======================
+
+// const sumOfSquare = (arr) => {
+//   let sum = 0;
+
+//   for (const ele of arr) {
+//     sum += ele * ele;
+//   }
+//   return sum;
+// };
+
+// console.log(sumOfSquare([1, 2, 3, 4]));
+// console.log(sumOfSquare([1, 2, 3]));
+
+//================================= Day-14 ==================================================
