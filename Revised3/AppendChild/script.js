@@ -4,6 +4,8 @@ const card = document.querySelector('.card');
 const input = document.querySelector('input');
 const form = document.querySelector('form');
 
+const main_card = document.querySelector('.main_card');
+
 // for (let i = 2; i <= 100; i++) {
 //   const newCard = card.cloneNode();
 //   newCard.innerText = i;
@@ -29,9 +31,15 @@ card.addEventListener('click', () => {
   const newCard = document.createElement('div');
   newCard.classList.add('card');
   newCard.innerText = count++;
+
   container.append(newCard);
 });
 
+container.addEventListener('click', (e) => {
+  if (e.target !== container) {
+    e.target.remove();
+  }
+});
 // ==================== CLICK SIMULATE ============================
 
 // const intervalId = setInterval(() => {

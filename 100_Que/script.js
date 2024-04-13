@@ -186,20 +186,16 @@
 // =================== OR =======================
 
 // const findMax = (arr) => {
-//   let maxnum = arr.map((ele) => {
-//     let max = 0;
-
-//     if (ele > max) {
-//       max = ele;
+//   let max = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > min) {
+//       min = arr[i];
 //     }
-//     return max;
-//   });
-//   return maxnum;
+//   }
+//   return max;
 // };
 
-// console.log(findMax([1, 5, 3, 9, 2]));
-// console.log(findMax([-10, -5, -3, -9, -2]));
-// console.log(findMax([5]));
+// console.log(findMax([5, 10, 2, 8]));
 
 //================================= Day-8 ==================================================
 
@@ -338,39 +334,91 @@
 // console.log(isPowerOfTwo(9));
 // console.log(isPowerOfTwo(4));
 
-// ===================================================
-
-// const arr = [1, 4, 2, 6];
-
-// for (let i = 0; i < arr.length; i++) {
-//   if (arr[i] > arr[i + 1]) {
-//     arr[i] = arr[i + 1];
-//   }
-// }
-// console.log(arr);
-
-// console.log(arr.sort((a, b) => b - a));
-
-//================================= Day-13 ==================================================
+//================================= Day-15 ==================================================
 
 // const sumOfSquare = (arr) => {
 //   return arr.reduce((acc, cur) => (acc += cur * cur), 0);
 // };
 
 // console.log(sumOfSquare([1, 2, 3]));
+// console.log(sumOfSquare([1, 2, 3, 4]));
 
-// ====================== OR ======================
+//================================= Day-16 ==================================================
 
-// const sumOfSquare = (arr) => {
-//   let sum = 0;
-
-//   for (const ele of arr) {
-//     sum += ele * ele;
-//   }
-//   return sum;
+// const findMin = (arr) => {
+//   arr.sort((a, b) => a - b);
+//   return arr[0];
 // };
 
-// console.log(sumOfSquare([1, 2, 3, 4]));
-// console.log(sumOfSquare([1, 2, 3]));
+// console.log(findMin([5, 10, 2, 8]));
+// console.log(findMin([5, -3, 2, -7]));
+// console.log(findMin([]));
 
-//================================= Day-14 ==================================================
+// =================== OR ==========================
+
+// const findMin = (arr) => {
+//   if (arr.length === 0) return 'Array is empty';
+//   return Math.min(...arr);
+// };
+
+// console.log(findMin([5, 10, 2, 8]));
+// console.log(findMin([5, -3, 2, -7]));
+// console.log(findMin([]));
+
+// ======================= OR ======================
+
+// const findMinNum = (arr) => {
+//   let min = arr[0];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < min) {
+//       min = arr[i];
+//     }
+//   }
+//   return min;
+// };
+// console.log(findMinNum([5, 10, 2, 8]));
+// console.log(findMinNum([5, -3, 2, -7]));
+
+// ======================= OR ======================
+
+// const findMinNum = (arr) => {
+//   let min = arr[0];
+//   for (const ele of arr) {
+//     if (ele < min) {
+//       min = ele;
+//     }
+//   }
+//   return min;
+// };
+
+// console.log(findMinNum([5, 10, 2, 8]));
+// console.log(findMinNum([5, -3, 2, -7]));
+
+//================================= Day-17 ==================================================
+// => Write a function to convert a string to camelCase & snake_case
+
+// const toCamelCase = (str) => {
+//   str = str
+//     .toLowerCase()
+//     .split(' ')
+//     .map((ele, ind) => {
+//       if (ind === 0) {
+//         return ele;
+//       } else {
+//         return ele.charAt(0).toUpperCase() + ele.slice(1);
+//       }
+//     })
+//     .join('');
+
+//   return str;
+// };
+
+// console.log(toCamelCase('hello world niHar'));
+
+// ================== SNACK CASE ===================
+
+// const toSnakeCase = (str) => {
+//   return str.toLowerCase().split(' ').join('_');
+// };
+
+// console.log(toSnakeCase('hello world How aRe you'));
