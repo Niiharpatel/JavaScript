@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  a {
+    text-decoration-line: none;
+    color: inherit;
+  }
+
+  li {
+    list-style: none;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6f0eb;
+}
+
+header {
+  background-color: white;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-block: 20px;
+}
+
+.container_2 {
+  margin-inline: 70px;
+  padding-block: 20px;
+}
+
+header .close_icon {
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.header_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 15px;
+}
+
+.list_flex {
+  display: flex;
+  gap: 30px;
+  font-weight: 700;
+}
+
+.menu_bar i {
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+.menu_bar {
+  display: none;
+}
+
+.hero_sec {
+  margin-top: 100px;
+}
+.hero_sec .hero_container {
+  display: flex;
+  justify-content: center;
+  margin-inline: 15px;
+}
+
+.hero_container img {
+  max-width: 1440px;
+  width: 100%;
+}
+
+.hero_sec .para {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.container_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_2 img {
+  max-width: 1290px;
+  width: 100%;
+}
+
+.margin_top {
+  margin-top: 100px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.deal_of_the_day p {
+  font-weight: 700;
+  margin-right: 70px;
+  text-align: right;
+}
+
+.deal_of_the_day p a {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  color: gray;
+}
+
+/* ============ MEDIA QUERY ================== */
+
+@media (max-width: 890px) {
+  header {
+    background-color: #f6f0eb6f;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+  }
+
+  .margin_top {
+    margin-top: 30px;
+  }
+  .heading {
+    font-size: 20px;
+  }
+
+  nav .list_flex {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.75);
+    flex-direction: column;
+    gap: 20px;
+    right: 15px;
+    top: 45px;
+    padding: 25px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header .close_icon {
+    display: block;
+  }
+
+  .menu_bar {
+    display: block;
+  }
+
+  .deal_of_the_day p {
+    margin-right: 40px;
+  }
+
+  footer p {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 391px) {
+  header {
+    background-color: #f6f0eb6f;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px);
+  }
+
+  header .logo img {
+    width: 30px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .heading {
+    font-size: 14px;
+  }
+  .container {
+    padding-block: 10px;
+  }
+  .container_2 {
+    margin-inline: 40px;
+    padding-block: 10px;
+  }
+
+  .margin_top {
+    margin-top: 25px;
+  }
+
+  .hero_sec .para {
+    padding-top: 10px;
+    font-size: 10px;
+  }
+
+  .deal_of_the_day p a {
+    font-size: 12px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+
+  .menu_bar i {
+    top: 20px;
+  }
+
+  nav .list_flex {
+    top: 20px;
+  }
+
+  footer p {
+    padding-top: 20px;
+  }
+}

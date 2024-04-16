@@ -16,7 +16,7 @@ body {
 .heading {
   text-align: center;
   color: #61481c;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .focus {
@@ -40,7 +40,7 @@ body {
 
 .card_content h2 {
   font-size: 2rem;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .sun_icon {
@@ -69,12 +69,13 @@ body {
   display: flex;
   align-items: center;
   overflow: hidden;
+  transition: width 0.8s ease-in-out;
 }
 
 .progress_value span {
   padding-left: 10px;
+  min-width: max-content;
 }
-
 .error_text {
   color: red;
   display: none;
@@ -122,8 +123,8 @@ body {
 }
 
 .check_box {
-  height: 15px;
-  width: 15px;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
   border: 1px solid rgb(182, 177, 177);
   flex-shrink: 0;
@@ -139,6 +140,8 @@ body {
 
 .check_icon {
   display: none;
+  height: 10px;
+  width: 10px;
 }
 
 .completed .check_icon {

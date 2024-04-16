@@ -422,3 +422,60 @@
 // };
 
 // console.log(toSnakeCase('hello world How aRe you'));
+
+//================================= Day-18 ==================================================
+
+// const isUpperCase = (char) => {
+//   if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
+//     return true;
+//   }
+//   return false;
+// };
+
+// console.log(isUpperCase('s'));
+
+// ================================= OR =======================
+// const isUpperCase = (char) => {
+//   return char === char.toUpperCase();
+// };
+
+// console.log(isUpperCase('s'));
+
+// ===================== OR ========================
+// const isLowerCase = (char) => {
+//   return char === char.toLowerCase();
+// };
+
+// console.log(isLowerCase('A'));
+
+//================================= Day-19 ==================================================
+
+// const startWith = (str, subStr) => {
+//   return str.toLowerCase().startsWith(subStr.toLowerCase());
+// };
+
+// console.log(startWith('Hello World', 'hello'));
+// console.log(startWith('Hello World', 'World'));
+
+// ====================== OR ============================
+
+// const startWith = (str, subStr) => {
+//   return str.toLowerCase().slice(0, subStr.length) === subStr.toLowerCase();
+// };
+
+// console.log(startWith('Hello World', 'hello'));
+// console.log(startWith('Hello World', 'World'));
+
+//================================= Day-20 ==================================================
+
+// =>Reverse a string without using in built methods.
+
+const reverseString = (str) => {
+  let revStr = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    revStr += str[i];
+  }
+  return revStr;
+};
+
+console.log(reverseString('Hello'));
