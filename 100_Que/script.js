@@ -470,12 +470,51 @@
 
 // =>Reverse a string without using in built methods.
 
-const reverseString = (str) => {
-  let revStr = '';
-  for (let i = str.length - 1; i >= 0; i--) {
-    revStr += str[i];
+// const reverseString = (str) => {
+//   let revStr = '';
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     revStr += str[i];
+//   }
+//   return revStr;
+// };
+
+// console.log(reverseString('Hello'));
+
+//================================= Day-21 ==================================================
+
+// =>calculate mean,mode,median
+
+// const calculateMean = (arr) => {
+//   if (arr.length === 0) {
+//     return false;
+//   }
+
+//   let sum = arr.reduce((acc, ele) => acc + ele, 0);
+//   return sum / arr.length;
+// };
+
+// console.log(calculateMean([1, 2, 3, 4, 5]));
+// console.log(calculateMean([10, 20, 30]));
+// console.log(calculateMean([-1, 0, 1]));
+
+// ======= MEDIAN ============
+
+const findMedian = (arr) => {
+  arr.sort((a, b) => a - b);
+
+  let length = arr.length;
+
+  let mid = Math.floor(length / 2);
+
+  // console.log(mid);
+
+  if (length % 2 === 0) {
+    return (arr[mid] + arr[mid - 1]) / 2;
+  } else {
+    return arr[mid];
   }
-  return revStr;
 };
 
-console.log(reverseString('Hello'));
+console.log(findMedian([5, 3, 9, 1, 7]));
+console.log(findMedian([2, 4, 6, 8]));
+console.log(findMedian([1, 3, 5, 7, 9, 11]));

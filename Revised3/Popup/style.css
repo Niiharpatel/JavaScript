@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+
+body {
+  background-color: #decdac;
+}
+
+button {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0 5px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  transform: scale(0);
+  transition: 0.2s all ease-in-out;
+  backdrop-filter: blur(5px);
+
+  /* display: none; */
+}
+
+.popup.open {
+  /* display: block; */
+  transform: scale(1);
+}
+
+.close_icon {
+  font-size: 3rem;
+  font-weight: 500;
+  position: absolute;
+  top: -4px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.bg {
+  background: rgba(69, 68, 68, 0.658);
+  height: 100vh;
+}
