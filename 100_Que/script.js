@@ -497,24 +497,62 @@
 // console.log(calculateMean([10, 20, 30]));
 // console.log(calculateMean([-1, 0, 1]));
 
-// ======= MEDIAN ============
+// ======= MEDIAN ==== DAY-22 ========
 
-const findMedian = (arr) => {
-  arr.sort((a, b) => a - b);
+// const findMedian = (arr) => {
+//   arr.sort((a, b) => a - b);
 
-  let length = arr.length;
+//   let length = arr.length;
 
-  let mid = Math.floor(length / 2);
+//   let mid = Math.floor(length / 2);
 
-  // console.log(mid);
+//   // console.log(mid);
 
-  if (length % 2 === 0) {
-    return (arr[mid] + arr[mid - 1]) / 2;
-  } else {
-    return arr[mid];
-  }
+//   if (length % 2 === 0) {
+//     return (arr[mid] + arr[mid - 1]) / 2;
+//   } else {
+//     return arr[mid];
+//   }
+// };
+
+// console.log(findMedian([5, 3, 9, 1, 7]));
+// console.log(findMedian([2, 4, 6, 8]));
+// console.log(findMedian([1, 3, 5, 7, 9, 11]));
+
+//================================= Day-23 ==================================================
+
+// const number = [1, 2, 2, 3, 1, 4, 2];
+
+// let counts = {};
+
+// for (const ele of number) {
+//   counts[ele] = (counts[ele] || 0) + 1;
+// }
+
+// console.log('counts:', counts);
+
+//================================= Day-24 MODE ==================================================
+
+// const findMode = (arr) => {
+//   let counts = {};
+//   let maxNum = 0;
+//   let mode;
+//   for (const ele of arr) {
+//     counts[ele] = (counts[ele] || 0) + 1;
+//     if (counts[ele] > maxNum) {
+//       maxNum = counts[ele];
+
+//       mode = ele;
+//     }
+//   }
+//   return mode;
+// };
+
+// console.log(findMode([1, 2, 2, 3, 1, 4, 2]));
+
+//================================= Day-25  ==================================================
+
+const findFactorial = (num) => {
+  return num === 0 ? 1 : num * findFactorial(num - 1);
 };
-
-console.log(findMedian([5, 3, 9, 1, 7]));
-console.log(findMedian([2, 4, 6, 8]));
-console.log(findMedian([1, 3, 5, 7, 9, 11]));
+console.log(findFactorial(5));
