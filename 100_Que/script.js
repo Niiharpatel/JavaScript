@@ -552,7 +552,25 @@
 
 //================================= Day-25  ==================================================
 
-const findFactorial = (num) => {
-  return num === 0 ? 1 : num * findFactorial(num - 1);
+// const findFactorial = (num) => {
+//   return num === 0 ? 1 : num * findFactorial(num - 1);
+// };
+// console.log(findFactorial(5));
+
+//================================= Day-26  ==================================================
+// =>Find Fibonacci number...
+
+const fibonacci = (num) => {
+  if (num <= 1) {
+    return num;
+  } else {
+    return fibonacci(num - 1) + fibonacci(num - 2);
+  }
 };
-console.log(findFactorial(5));
+
+console.log(fibonacci(0));
+console.log(fibonacci(1));
+console.log(fibonacci(2));
+console.log(fibonacci(3));
+console.log(fibonacci(4));
+console.log(fibonacci(5));
