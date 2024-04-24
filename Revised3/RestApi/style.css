@@ -164,9 +164,15 @@ body {
 .dark .fa-moon {
   display: none;
 }
+.theme_toggler {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
 
 .theme_toggler i {
   cursor: pointer;
+  font-size: 20px;
 }
 
 .light_mode {
@@ -184,4 +190,36 @@ body {
 
 .dark .dark_mode {
   display: inline-block;
+}
+
+@media (max-width: 391px) {
+  .header_title {
+    font-size: medium;
+  }
+
+  .search_filter_section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .search_container {
+    align-self: flex-start;
+  }
+
+  .search_container input {
+    max-width: 85%;
+    padding: 10px 0px 10px 5px;
+  }
+
+  .filter_container {
+    align-self: flex-start;
+  }
+
+  .container {
+    padding-block: 30px;
+  }
+
+  .card_main {
+    width: 290px;
+  }
 }

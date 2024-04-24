@@ -59,7 +59,7 @@
 }
 
 .border_country {
-  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
 .border_btn {
@@ -99,4 +99,30 @@
 
 .dark .dark_mode {
   display: inline-block;
+}
+
+@media (max-width: 390px) {
+  .country_section {
+    flex-direction: column;
+    margin-inline: 10px;
+    align-items: flex-start;
+  }
+
+  .country_content {
+    margin-top: 1.5rem;
+  }
+
+  .country_content h1 {
+    padding-bottom: 1rem;
+  }
+
+  .country_details {
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 30px;
+  }
+
+  .border_country span > b {
+    display: block;
+  }
 }

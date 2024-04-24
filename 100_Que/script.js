@@ -586,15 +586,40 @@
 
 //================================= Day-28  ==================================================
 
-const truncateString = (str, maxLength) => {
-  // if (maxLength <= 0) {
-  //   return str.concat('...');
-  // } else if (str.length > maxLength) {
-  //   return str.slice(0, maxLength).concat('...');
-  // }
+// const truncateString = (str, maxLength) => {
+// if (maxLength <= 0) {
+//   return str.concat('...');
+// } else if (str.length > maxLength) {
+//   return str.slice(0, maxLength).concat('...');
+// }
 
-  return maxLength <= 0 ? str : str.slice(0, maxLength).concat('...');
+//   return maxLength <= 0 ? str : str.slice(0, maxLength).concat('...');
+// };
+
+// console.log(truncateString('hello my name is Nihar Patel', 8));
+// console.log(truncateString('hello my name is Nihar Patel', 0));
+
+//================================= Day-29  ==================================================
+
+// const numberRange = (a, b) => {
+//   let arr = [];
+//   for (let i = a; i <= b; i++) {
+//     arr.push(i);
+//   }
+//   return arr;
+// };
+
+// ===== USING Recursion =========
+
+const numberRange = (a, b) => {
+  let arr = [];
+  while (a <= b) {
+    arr.push(a);
+    numberRange(a++);
+  }
+  return arr;
 };
 
-console.log(truncateString('hello my name is Nihar Patel', 8));
-console.log(truncateString('hello my name is Nihar Patel', 0));
+console.log(numberRange(0, 5));
+console.log(numberRange(3, 7));
+console.log(numberRange(-2, 2));
