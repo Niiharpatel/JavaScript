@@ -560,17 +560,41 @@
 //================================= Day-26  ==================================================
 // =>Find Fibonacci number...
 
-const fibonacci = (num) => {
-  if (num <= 1) {
-    return num;
-  } else {
-    return fibonacci(num - 1) + fibonacci(num - 2);
-  }
+// const fibonacci = (num) => {
+//   if (num <= 1) {
+//     return num;
+//   } else {
+//     return fibonacci(num - 1) + fibonacci(num - 2);
+//   }
+// };
+
+// console.log(fibonacci(0));
+// console.log(fibonacci(1));
+// console.log(fibonacci(2));
+// console.log(fibonacci(3));
+// console.log(fibonacci(4));
+// console.log(fibonacci(5));
+
+//================================= Day-27  ==================================================
+
+// const repeatString = (str, count) => {
+//   return count > 0 ? str.repeat(count) : str;
+// };
+
+// console.log(repeatString('abc', 5));
+// console.log(repeatString('abc', 0));
+
+//================================= Day-28  ==================================================
+
+const truncateString = (str, maxLength) => {
+  // if (maxLength <= 0) {
+  //   return str.concat('...');
+  // } else if (str.length > maxLength) {
+  //   return str.slice(0, maxLength).concat('...');
+  // }
+
+  return maxLength <= 0 ? str : str.slice(0, maxLength).concat('...');
 };
 
-console.log(fibonacci(0));
-console.log(fibonacci(1));
-console.log(fibonacci(2));
-console.log(fibonacci(3));
-console.log(fibonacci(4));
-console.log(fibonacci(5));
+console.log(truncateString('hello my name is Nihar Patel', 8));
+console.log(truncateString('hello my name is Nihar Patel', 0));

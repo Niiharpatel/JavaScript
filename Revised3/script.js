@@ -22,7 +22,7 @@
 
 // console.log(userName[0]);
 
-// ====================================== LOGICAL OPERATORS ========================
+// ======================= LOGICAL OPERATORS ==========================
 
 // let name = prompt('Enter name') || 'Nihar';
 // let age = prompt('Enter age') || '23';
@@ -162,15 +162,15 @@
 
 // =================
 
-// const info = {
-//   name: 'junas',
-//   age: 23,
-//   city: 'cahnoi',
-// };
+const info = {
+  name: 'junas',
+  age: 23,
+  city: 'cahnoi',
+};
 
-// for (const key in info) {
-//   console.log('key:', key);
-// }
+for (const key in info) {
+  console.log('key:', key);
+}
 
 // const key = Object.keys(info);
 // const values = Object.values(info);
@@ -414,3 +414,15 @@
 //   var a = 5;
 // }
 // fun(10);
+
+// let userName = 'Nihar';
+// let newName = userName;
+
+// newName = 'guru';
+
+// userName = 'Guru';
+
+let obj1 = { userName: 'Nihar' };
+let obj2 = obj1;
+
+// obj1.userName = 'Guru';

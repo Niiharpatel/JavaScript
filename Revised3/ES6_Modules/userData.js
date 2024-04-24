@@ -1867,4 +1867,6 @@ export const myName = 'Nihar';
 // export { usersData, myName as name };
 
 // export { myName };
+
+console.log('userData');
 export default usersData;

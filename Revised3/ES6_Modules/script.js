@@ -1,4 +1,6 @@
-// import usersData, { myName } from './userData.js';
+// 'use strict';
+
+import usersData, { myName } from './userData.js';
 // import { productsData } from './productsData.js';
 // import products from './productsData.js';
 // import * as allData from './userData.js';
@@ -12,5 +14,7 @@
 
 // ===========================
 
-const user = 'Nihar';
-console.log('user:', user);
+// const user = 'Nihar';
+// console.log('user:', user);
+
+console.log('Main');

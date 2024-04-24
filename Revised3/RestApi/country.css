@@ -1,0 +1,102 @@
+:root {
+  --background-color: #e5dada42;
+  --text-color: black;
+  --elements-color: white;
+  --dark-background-color: hsl(207, 26%, 17%);
+  --dark-text-color: white;
+  --dark-elements-color: hsl(209, 23%, 22%);
+}
+
+.header_section {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  background-color: var(--elements-color);
+  color: var(--text-color);
+}
+.dark .header_section {
+  background-color: var(--dark-elements-color);
+  color: var(--dark-text-color);
+}
+
+.back_btn {
+  padding: 6px 25px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-block: 20px;
+  box-shadow: 0px 0px 4px 0 var(--dark-elements-color);
+  cursor: pointer;
+}
+.dark .back_btn {
+  padding: 6px 25px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-block: 20px;
+  box-shadow: 0px 0px 4px 0 var(--elements-color);
+  cursor: pointer;
+}
+
+.country_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6rem;
+  margin-top: 30px;
+}
+
+.country_details {
+  display: flex;
+  gap: 10rem;
+  line-height: 30px;
+}
+
+.img_div img {
+  max-width: 500px;
+  width: 100%;
+  max-height: 300px;
+}
+
+.country_content h1 {
+  padding-bottom: 1.2rem;
+}
+
+.border_country {
+  padding-top: 2rem;
+}
+
+.border_btn {
+  padding: 6px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-block: 5px;
+  box-shadow: 0px 0px 4px 0 var(--dark-elements-color);
+  margin-inline: 3px;
+  cursor: pointer;
+}
+
+.dark .border_btn {
+  box-shadow: 0px 0px 4px 0 var(--elements-color);
+}
+
+.dark .fa-moon {
+  display: none;
+}
+
+.theme_toggler i {
+  cursor: pointer;
+}
+
+.light_mode {
+  font-weight: 700;
+}
+
+.dark .light_mode {
+  display: none;
+}
+
+.dark_mode {
+  display: none;
+  font-weight: 700;
+}
+
+.dark .dark_mode {
+  display: inline-block;
+}

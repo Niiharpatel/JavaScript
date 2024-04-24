@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestApi</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="header_section">
+        <div class="container">
+            <div class="header_flex">
+                <h1 class="header_title"><a href="/">Where in the world?</a></h1>
+                <div class="theme_toggler">
+                    <i class="fa-regular fa-moon"></i>&nbsp; <span class="light_mode">Light Mode</span><span
+                        class=" dark_mode">Dark Mode</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+
+        <section class="card_section">
+            <div class="container">
+                <div class="search_filter_section">
+                    <div class="search_container">
+                        <i class="fa-solid fa-magnifying-glass"></i><input type="text"
+                            placeholder="Search for a country...">
+                    </div>
+                    <div class="filter_container">
+                        <select class="select_menu">
+                            <option hidden>Filter by Region</option>
+                            <option value="Africa">Africa</option>
+                            <option value="America">America</option>
+                            <option value="Asia">Asia</option>
+                            <option value="Europe">Europe</option>
+                            <option value="Ocenia">Ocenia</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="country_cards">
+                    <!-- <a href="#" class="card_main">
+                        <img class='card_img' src="https://flagcdn.com/de.svg" alt="flag">
+                        <div class="card_content">
+                            <h3 class="country_name"><b>Germany</b></h3>
+                            <p class="Population"><b>Population: </b>81,730</p>
+                            <p class="region"><b>Region: </b>Europe</p>
+                            <p class="capital"><b>Capital: </b>Berlin</p>
+                        </div>
+                    </a> -->
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
