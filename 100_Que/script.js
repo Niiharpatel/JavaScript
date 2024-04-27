@@ -609,17 +609,49 @@
 //   return arr;
 // };
 
-// ===== USING Recursion =========
+// ===== USING Recursion Day-30 =========
 
-const numberRange = (a, b) => {
-  let arr = [];
-  while (a <= b) {
-    arr.push(a);
-    numberRange(a++);
+// const numberRange = (a, b, arr = []) => {
+//   if (a <= b) {
+//     arr.push(a);
+//     return numberRange(a + 1, b, arr);
+//   }
+
+//   return arr;
+// };
+
+// console.log(numberRange(0, 5));
+// console.log(numberRange(3, 7));
+// console.log(numberRange(-2, 2));
+
+//================================= Day-31  ==================================================
+// =>Password Validator:
+
+const passwordValidator = (pass) => {
+  let hasLowerCase = false;
+  let hasUpperCase = false;
+  let hasNumber = false;
+
+  for (const char of pass) {
+    if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
+      hasUpperCase = true;
+    } else if (char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122) {
+      hasLowerCase = true;
+    } else if (!isNaN(Number(char))) {
+      hasNumber = true;
+    }
   }
-  return arr;
+
+  if (!hasLowerCase || !hasUpperCase || !hasNumber || pass.length < 8) {
+    return false;
+  }
+
+  return true;
 };
 
-console.log(numberRange(0, 5));
-console.log(numberRange(3, 7));
-console.log(numberRange(-2, 2));
+console.log(passwordValidator('afkdsfadsf'));
+console.log(passwordValidator('afkdsfadsf1'));
+console.log(passwordValidator('afkdsfadsf1A'));
+console.log(passwordValidator('afkdsfadsf1Aa'));
+
+//================================= Day-32  ==================================================
