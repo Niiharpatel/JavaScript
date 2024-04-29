@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+}
+
+.container {
+  padding-inline: 20px;
+  padding-block: 30px;
+}
+
+.container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.img_section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.img_section img {
+  width: 400px;
+  height: 400px;
+}
+
+.images img {
+  border-radius: 10px;
+}

@@ -627,31 +627,52 @@
 //================================= Day-31  ==================================================
 // =>Password Validator:
 
-const passwordValidator = (pass) => {
-  let hasLowerCase = false;
-  let hasUpperCase = false;
-  let hasNumber = false;
+// const passwordValidator = (pass) => {
+//   let hasLowerCase = false;
+//   let hasUpperCase = false;
+//   let hasNumber = false;
 
-  for (const char of pass) {
-    if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
-      hasUpperCase = true;
-    } else if (char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122) {
-      hasLowerCase = true;
-    } else if (!isNaN(Number(char))) {
-      hasNumber = true;
-    }
-  }
+//   for (const char of pass) {
+//     if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
+//       hasUpperCase = true;
+//     } else if (char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122) {
+//       hasLowerCase = true;
+//     } else if (!isNaN(Number(char))) {
+//       hasNumber = true;
+//     }
+//   }
 
-  if (!hasLowerCase || !hasUpperCase || !hasNumber || pass.length < 8) {
-    return false;
-  }
+//   if (!hasLowerCase || !hasUpperCase || !hasNumber || pass.length < 8) {
+//     return false;
+//   }
 
-  return true;
-};
+//   return true;
+// };
 
-console.log(passwordValidator('afkdsfadsf'));
-console.log(passwordValidator('afkdsfadsf1'));
-console.log(passwordValidator('afkdsfadsf1A'));
-console.log(passwordValidator('afkdsfadsf1Aa'));
+// console.log(passwordValidator('afkdsfadsf'));
+// console.log(passwordValidator('afkdsfadsf1'));
+// console.log(passwordValidator('afkdsfadsf1A'));
+// console.log(passwordValidator('afkdsfadsf1Aa'));
 
 //================================= Day-32  ==================================================
+
+// => Image Filter..
+
+const tabs = document.querySelector('.tabs');
+const gallery = document.querySelectorAll('.images');
+
+tabs.addEventListener('click', (e) => {
+  if (e.target.dataset.category !== undefined) {
+    filterData(e.target.dataset.category);
+  }
+});
+
+const filterData = (data) => {
+  gallery.forEach((ele) => {
+    if (ele.dataset.category === data || data === 'all') {
+      ele.style.display = 'block';
+    } else {
+      ele.style.display = 'none';
+    }
+  });
+};
