@@ -658,21 +658,39 @@
 
 // => Image Filter..
 
-const tabs = document.querySelector('.tabs');
-const gallery = document.querySelectorAll('.images');
+// const tabs = document.querySelector('.tabs');
+// const gallery = document.querySelectorAll('.images');
 
-tabs.addEventListener('click', (e) => {
-  if (e.target.dataset.category !== undefined) {
-    filterData(e.target.dataset.category);
-  }
-});
+// tabs.addEventListener('click', (e) => {
+//   if (e.target.dataset.category !== undefined) {
+//     filterData(e.target.dataset.category);
+//   }
+// });
 
-const filterData = (data) => {
-  gallery.forEach((ele) => {
-    if (ele.dataset.category === data || data === 'all') {
-      ele.style.display = 'block';
-    } else {
-      ele.style.display = 'none';
-    }
-  });
-};
+// const filterData = (data) => {
+//   gallery.forEach((ele) => {
+//     if (ele.dataset.category === data || data === 'all') {
+//       ele.style.display = 'block';
+//     } else {
+//       ele.style.display = 'none';
+//     }
+//   });
+// };
+
+//================================= Day-33 ==================================================
+// =>Random Hax Color..
+
+// const randomHaxColor = () => {
+//   return `#${Math.random().toString(16).slice(2, 8).padEnd(6, 0)}`;
+// };
+
+// console.log(randomHaxColor());
+
+//================================= Day-34 ==================================================
+
+const removeDuplicate = (arr) => [...new Set(arr)];
+
+console.log(removeDuplicate([1, 2, 3, 3, 4, 4, 5]));
+console.log(removeDuplicate(['a', 'b', 'c', 'b', 'a']));
+
+//================================= Day-35 ==================================================
