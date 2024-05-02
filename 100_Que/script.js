@@ -688,9 +688,18 @@
 
 //================================= Day-34 ==================================================
 
-const removeDuplicate = (arr) => [...new Set(arr)];
+// const removeDuplicate = (arr) => [...new Set(arr)];
 
-console.log(removeDuplicate([1, 2, 3, 3, 4, 4, 5]));
-console.log(removeDuplicate(['a', 'b', 'c', 'b', 'a']));
+// console.log(removeDuplicate([1, 2, 3, 3, 4, 4, 5]));
+// console.log(removeDuplicate(['a', 'b', 'c', 'b', 'a']));
 
 //================================= Day-35 ==================================================
+
+// const isEmptyObject = (obj) => {
+//   return Object.keys(obj).length === 0 ? "It's Empty" : "It's not empty";
+// };
+
+// console.log(isEmptyObject({ name: 'Nihar' }));
+// console.log(isEmptyObject({}));
+// console.log(isEmptyObject({ keyWithNull: null }));
+// console.log(isEmptyObject({ keyWithUndefined: undefined }));

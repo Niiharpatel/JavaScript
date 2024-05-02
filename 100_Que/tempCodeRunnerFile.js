@@ -1,2 +1,1 @@
-
-  while (a <= b) {
+value
