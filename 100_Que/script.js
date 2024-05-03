@@ -703,3 +703,21 @@
 // console.log(isEmptyObject({}));
 // console.log(isEmptyObject({ keyWithNull: null }));
 // console.log(isEmptyObject({ keyWithUndefined: undefined }));
+
+//================================= Day-36 ==================================================
+// =>Objct to array and array to object
+
+// const objToArray = (obj) => {};
+
+// const obj = {
+//   name: 'Nihar',
+//   age: 24,
+//   city: 'Valsad',
+// };
+
+// const arr = Object.entries(obj);
+// console.log(arr);
+// console.log(arr.flat());
+
+// const newObj = Object.fromEntries(arr);
+// console.log('newObj:', newObj);
