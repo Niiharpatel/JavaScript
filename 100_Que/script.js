@@ -721,3 +721,145 @@
 
 // const newObj = Object.fromEntries(arr);
 // console.log('newObj:', newObj);
+
+//================================= Day-37 ==================================================
+
+// P=> Price
+// T=> Time
+// R=> Rate
+
+// const calculateSimpleInterest = (p, t, r) => {
+//   return (p * t * r) / 100;
+// };
+
+// console.log(calculateSimpleInterest(1000, 5, 3));
+
+//================================= Day-38 ==================================================
+
+// const calculateDays = (d1, d2) => {
+//   let date1 = new Date(d1);
+//   let date2 = new Date(d2);
+
+//   let diff = Math.abs(date2 - date1);
+
+//   return diff / (24 * 60 * 60 * 1000);
+// };
+
+// console.log(calculateDays('2024-01-01', '2024-01-31'));
+
+//================================= Day-39 ==================================================
+
+// const calculateAge = (date) => {
+//   let curDate = new Date();
+//   let birthDate = new Date(date);
+
+//   let age = curDate.getFullYear() - birthDate.getFullYear();
+
+//   let monthDiff = curDate.getMonth() - birthDate.getMonth();
+
+//   if (
+//     monthDiff < 0 ||
+//     (monthDiff === 0 && curDate.getDate() < birthDate.getDate())
+//   ) {
+//     age--;
+//   }
+
+//   return age;
+// };
+
+// console.log(calculateAge('1990-05-15'));
+// console.log(calculateAge('1990-02-05'));
+
+//================================= Day-40 ==================================================
+
+// const generateBarChart = (arr) => {
+//   const chart = arr.map((ele, ind) => {
+//     let str = '';
+//     for (let i = 0; i < ele; i++) {
+//       str = str + '*';
+//     }
+
+//     return `${ind + 1}: ${str}`;
+//   });
+//   return chart.join('\n');
+// };
+
+// console.log(generateBarChart([5, 3, 9, 2]));
+
+// ============= OR =============
+
+// const generateBarChart = (arr) => {
+//   return arr
+//     .map((curEle, ind) => {
+//       return `${ind + 1}: ${' *'.repeat(curEle)}`;
+//     })
+//     .join('\n');
+// };
+
+// console.log(generateBarChart([5, 3, 9, 2]));
+
+//================================= Day-41  ==================================================
+// const rates = {
+//   USD: 1, // Base currency
+//   EUR: 0.9, // 1 USD = 0.9 EUR
+//   GBP: 0.8, // 1 USD = 0.8 GBP
+//   INR: 82, // 1 USD = 74 INR
+// };
+
+// const convertCurrency = (amount, fC, tC) => {
+//   let amountInUSD = 0;
+
+//   if (fC !== 'USD') {
+//     amountInUSD = amount / rates[fC];
+//   } else {
+//     amountInUSD = amount;
+//   }
+
+//   let convertedAmount = 0;
+
+//   if (tC !== 'USD') {
+//     convertedAmount = amountInUSD * rates[tC];
+//   } else {
+//     convertedAmount = amountInUSD;
+//   }
+
+//   return convertedAmount;
+// };
+
+// console.log(convertCurrency(100, 'GBP', 'EUR'));
+
+//================================= Day-42  ==================================================
+
+const validateCreditCard = (str) => {
+  str = str.replace(/\D/g, '');
+  let revStr = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    revStr += str[i];
+  }
+
+  let doubleNum = revStr
+    .split('')
+    .map((curEle, ind) => {
+      if (ind % 2 !== 0) {
+        curEle = curEle * 2;
+        console.log('.map  curEle:', curEle);
+
+        if (curEle > 9) {
+          curEle = curEle - 9;
+        } else {
+          curEle = curEle;
+        }
+      }
+      return curEle;
+    })
+    .reduce((acc, curEle) => {
+      return acc + Number(curEle);
+    }, 0);
+
+  return doubleNum % 10 === 0;
+};
+
+console.log(validateCreditCard('4539 1488 0343 6467'));
+console.log(validateCreditCard('8273 1232 7352 0569'));
+
+//================================= Day-43  ==================================================
