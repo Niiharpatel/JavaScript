@@ -830,36 +830,58 @@
 
 //================================= Day-42  ==================================================
 
-const validateCreditCard = (str) => {
-  str = str.replace(/\D/g, '');
-  let revStr = '';
-  for (let i = str.length - 1; i >= 0; i--) {
-    revStr += str[i];
+// const validateCreditCard = (str) => {
+//   str = str.replace(/\D/g, '');
+//   let revStr = '';
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     revStr += str[i];
+//   }
+
+//   let doubleNum = revStr
+//     .split('')
+//     .map((curEle, ind) => {
+//       if (ind % 2 !== 0) {
+//         curEle = curEle * 2;
+//         console.log('.map  curEle:', curEle);
+
+//         if (curEle > 9) {
+//           curEle = curEle - 9;
+//         } else {
+//           curEle = curEle;
+//         }
+//       }
+//       return curEle;
+//     })
+//     .reduce((acc, curEle) => {
+//       return acc + Number(curEle);
+//     }, 0);
+
+//   return doubleNum % 10 === 0;
+// };
+
+// console.log(validateCreditCard('4539 1488 0343 6467'));
+// console.log(validateCreditCard('8273 1232 7352 0569'));
+
+//================================= Day-43 ==================================================
+
+const fizzBuzz = (n1, n2) => {
+  let arr = [];
+  for (let i = n1; i <= n2; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      arr.push('FizzBuzz');
+    } else if (i % 3 === 0) {
+      arr.push('Fizz');
+    } else if (i % 5 === 0) {
+      arr.push('Buzz');
+    } else {
+      arr.push(i);
+    }
   }
 
-  let doubleNum = revStr
-    .split('')
-    .map((curEle, ind) => {
-      if (ind % 2 !== 0) {
-        curEle = curEle * 2;
-        console.log('.map  curEle:', curEle);
-
-        if (curEle > 9) {
-          curEle = curEle - 9;
-        } else {
-          curEle = curEle;
-        }
-      }
-      return curEle;
-    })
-    .reduce((acc, curEle) => {
-      return acc + Number(curEle);
-    }, 0);
-
-  return doubleNum % 10 === 0;
+  return arr;
 };
 
-console.log(validateCreditCard('4539 1488 0343 6467'));
-console.log(validateCreditCard('8273 1232 7352 0569'));
+console.log(fizzBuzz(1, 15));
+console.log(fizzBuzz(12, 20));
 
-//================================= Day-43  ==================================================
+//================================= Day-44 ==================================================
