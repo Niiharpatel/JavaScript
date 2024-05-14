@@ -927,3 +927,15 @@
 // console.log(validMobileNumber('78965432107'));
 
 //================================= Day-47 ==================================================
+
+function extractNumbers(str) {
+  const regex = /\d+/g;
+
+  return str.match(regex);
+}
+
+console.log(extractNumbers('abc123de456'));
+console.log(extractNumbers('no number '));
+console.log(extractNumbers('1a2b3c4d'));
+console.log(extractNumbers('100,200 and 300'));
+console.log(extractNumbers(''));
