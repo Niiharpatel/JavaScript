@@ -864,24 +864,66 @@
 
 //================================= Day-43 ==================================================
 
-const fizzBuzz = (n1, n2) => {
-  let arr = [];
-  for (let i = n1; i <= n2; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      arr.push('FizzBuzz');
-    } else if (i % 3 === 0) {
-      arr.push('Fizz');
-    } else if (i % 5 === 0) {
-      arr.push('Buzz');
-    } else {
-      arr.push(i);
-    }
-  }
+// const fizzBuzz = (n1, n2) => {
+//   let arr = [];
+//   for (let i = n1; i <= n2; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       arr.push('FizzBuzz');
+//     } else if (i % 3 === 0) {
+//       arr.push('Fizz');
+//     } else if (i % 5 === 0) {
+//       arr.push('Buzz');
+//     } else {
+//       arr.push(i);
+//     }
+//   }
 
-  return arr;
-};
+//   return arr;
+// };
 
-console.log(fizzBuzz(1, 15));
-console.log(fizzBuzz(12, 20));
+// console.log(fizzBuzz(1, 15));
+// console.log(fizzBuzz(12, 20));
 
 //================================= Day-44 ==================================================
+
+// Regular Expression:
+// const a = ^[A-Za-z\d]{1,3}$
+
+// const validateEmail = (mail) => {
+//   return /^[A-Za-z\d]+(?:[.%_+][A-Za-z\d]+)*@[A-Za-z\d]+\.[A-Za-z]{2,}$/.test(
+//     mail
+//   );
+// };
+
+// console.log(validateEmail('john.doe@example.com'));
+// console.log(validateEmail('invalid..dot@domain.com'));
+// console.log(validateEmail('missing@dotcom'));
+// console.log(validateEmail('no@domain'));
+
+//================================= Day-45 ==================================================
+
+// const validatePassword = (pass) => {
+//   const regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\d])(?=.*[\W_]).{8,}$/;
+
+//   return regex.test(pass);
+// };
+
+// console.log(validatePassword('Pass123!'));
+// console.log(validatePassword('password'));
+// console.log(validatePassword('1234567'));
+// console.log(validatePassword('P@ssw0rd'));
+
+//================================= Day-46 ==================================================
+
+// function validMobileNumber(num) {
+//   const regex = /^[6-9][\d]{9}$/;
+
+//   return regex.test(num);
+// }
+
+// console.log(validMobileNumber('9876543210'));
+// console.log(validMobileNumber('0123456789'));
+// console.log(validMobileNumber('897654321'));
+// console.log(validMobileNumber('78965432107'));
+
+//================================= Day-47 ==================================================
