@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(hero.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  transition: 0.7s all ease;
+}
+
+.header_bg {
+  background-color: white;
+  box-shadow: 0 0 7px 0 #00000080;
+}
+
+.header_bg .list > a {
+  color: black;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding-block: 20px;
+  padding-inline: 20px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.logo > img {
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  letter-spacing: 0.15rem;
+}
+
+.list > a {
+  color: white;
+}
+
+.toggle_menu {
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+.hero_sec {
+  height: 100vh;
+}
+
+.hero_sec > .content {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 15px;
+}
+
+.content > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+}
+
+.content > p {
+  text-align: center;
+  max-width: 451px;
+  padding-block: 10px;
+}
+
+.content > a > button {
+  padding: 8px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  letter-spacing: 0.15rem;
+  margin-top: 10px;
+}
+
+.top_scroll_btn > button {
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  border-style: none;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.about_sec {
+  background-color: rgb(88, 187, 187);
+}
+.service_sec {
+  background-color: rgb(28, 95, 95);
+}
+.tour_sec {
+  background-color: rgb(157, 221, 221);
+}
+
+.heading {
+  height: 80vh;
+
+  text-align: center;
+  font-size: 2rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: darkslategray;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 74px;
+    right: 25px;
+    background-color: white;
+    padding: 20px;
+    transition: 1s all ease;
+    z-index: -1;
+  }
+
+  .show > .list {
+    display: block;
+    line-height: 2rem;
+  }
+
+  .list > a {
+    color: black;
+  }
+
+  .toggle_menu {
+    display: block;
+  }
+}
