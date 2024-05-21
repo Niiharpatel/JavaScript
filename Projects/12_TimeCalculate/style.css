@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 6rem;
+  margin-inline: 20px;
+}
+
+.img_container {
+  width: 500px;
+}
+
+.img_container > figure > img {
+  width: 100%;
+}
+
+.content {
+  max-width: 500px;
+  width: 100%;
+}
+
+.content > h2 {
+  color: rgb(18 110 113);
+  letter-spacing: 4px;
+}
+
+.content .giveaway {
+  letter-spacing: 3px;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.content > p {
+  font-size: small;
+  color: grey;
+  padding-block: 2rem;
+}
+
+.time_container {
+  display: flex;
+  gap: 10px;
+}
+
+.bg {
+  background-color: #303046;
+  height: 50px;
+  width: 50px;
+  color: white;
+  text-align: center;
+}
+
+.time_container span {
+  display: block;
+}
+
+.unit {
+  font-size: x-small;
+}
+
+.value {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  padding-block: 3px;
+}

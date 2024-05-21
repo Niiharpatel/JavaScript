@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  background-image: url(./photo_2024-05-15_15-16-01.jpg);
+  height: 70vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+}
+
+.cloud {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 47vh;
+  filter: opacity(0.3);
+}
+
+.cloud > img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+
+.road {
+  width: 100vw;
+  height: 29vh;
+  position: relative;
+  background-image: url('photo.jpg');
+}
+
+.car {
+  background-image: url('photo_2024-05-15_15-15-59.jpg');
+  position: relative;
+  top: -93px;
+  left: 0;
+  width: 295px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+  animation: moveCar 10s infinite linear;
+}
+
+.tyr1 {
+  background-image: url('photo_2024.jpg');
+  position: absolute;
+  mix-blend-mode: multiply;
+  top: 40px;
+  left: 13px;
+  height: 63px;
+  width: 68px;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+  animation: moveTyre 5s infinite linear;
+}
+
+.tyr2 {
+  background-image: url('photo_2024.jpg');
+  position: absolute;
+  mix-blend-mode: multiply;
+  top: 47px;
+  left: 194px;
+  height: 50px;
+  width: 60px;
+  background-size: cover;
+  background-position: center;
+  mix-blend-mode: multiply;
+  animation: moveTyre 5s infinite linear;
+}
+
+@keyframes moveCar {
+  from {
+    transform: translateX(-150px);
+  }
+  to {
+    transform: translateX(1500px);
+  }
+}
+@keyframes moveTyre {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

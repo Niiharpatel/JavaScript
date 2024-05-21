@@ -942,11 +942,28 @@
 
 //================================= Day-48 ==================================================
 
-const validateHexColor = (str) => {
-  return /^#([A-Fa-f\d]{3}|[A-Fa-f\d]{6})$/.test(str);
-};
+// const validateHexColor = (str) => {
+//   return /^#([A-Fa-f\d]{3}|[A-Fa-f\d]{6})$/.test(str);
+// };
 
-console.log(validateHexColor('#a3c113'));
-console.log(validateHexColor('#fff'));
-console.log(validateHexColor('#1234567'));
-console.log(validateHexColor('#g3c113'));
+// console.log(validateHexColor('#a3c113'));
+// console.log(validateHexColor('#fff'));
+// console.log(validateHexColor('#1234567'));
+// console.log(validateHexColor('#g3c113'));
+
+//================================= Day-49 ==================================================
+
+// const isValidDate = (str) => {
+//   return /^(0[1-9]|1[0-2])\/(0[1-9]|[12][0-9]|3[0-9])\/((19|20)[0-9]{2})$/.test(
+//     str
+//   );
+// };
+
+// console.log(isValidDate('12/15/2021'));
+// console.log(isValidDate('02/29/2021'));
+// console.log(isValidDate('04/31/2020'));
+// console.log(isValidDate('01/01/1800'));
+// console.log(isValidDate('13/01/2000'));
+// console.log(isValidDate('12/31/2099'));
+
+//================================= Day-50 ==================================================
