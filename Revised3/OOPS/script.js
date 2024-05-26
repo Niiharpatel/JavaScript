@@ -8,7 +8,7 @@
 //     return new Date().getFullYear() - user.age;
 //   },
 // };
-
+b;
 // ================== Abstraction =====================
 
 // const user = {

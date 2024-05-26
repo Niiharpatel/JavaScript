@@ -36,6 +36,7 @@ card.addEventListener('click', () => {
 });
 
 container.addEventListener('click', (e) => {
+  console.log('container.addEventListener  e:', e);
   if (e.target !== container) {
     e.target.remove();
   }

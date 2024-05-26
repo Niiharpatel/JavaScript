@@ -17,4 +17,4 @@ import usersData, { myName } from './userData.js';
 // const user = 'Nihar';
 // console.log('user:', user);
 
-console.log('Main');
+// console.log('Main');

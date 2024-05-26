@@ -1,18 +1,18 @@
 // should present a...z alphabet is called pangram
 
 function pangram(str) {
-  let newStr = str.replaceAll(" ", "");
+  let newStr = str.replaceAll(' ', '');
 
   newStr = new Set(newStr);
 
   if (newStr.size === 26) {
-    console.log("Is pangram");
+    console.log('Is pangram');
   } else {
-    console.log("Is not pangram");
+    console.log('Is not pangram');
   }
 }
 
-pangram("Five or six big jet planes zoomed quickly by the tower");
+pangram('Five or six big jet planes zoomed quickly by the tower');
 
 // function fun1(name, callback) {
 //   console.log(name);
@@ -24,3 +24,7 @@ pangram("Five or six big jet planes zoomed quickly by the tower");
 // }
 
 // fun1("Nihar", fun2);
+
+let age = 18;
+
+console.log(age > 18 ? true : false);

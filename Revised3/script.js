@@ -162,15 +162,15 @@
 
 // =================
 
-const info = {
-  name: 'junas',
-  age: 23,
-  city: 'cahnoi',
-};
+// const info = {
+//   name: 'junas',
+//   age: 23,
+//   city: 'cahnoi',
+// };
 
-for (const key in info) {
-  console.log('key:', key);
-}
+// for (const key in info) {
+//   console.log('key:', key);
+// }
 
 // const key = Object.keys(info);
 // const values = Object.values(info);
@@ -243,7 +243,7 @@ for (const key in info) {
 
 // ================== REDUCE ==============================
 
-// const nums = [2, 1, 3, 7, 8];
+// const nums = [1, 2, 3, 4];
 
 // const total = nums.reduce((acc, cur) => {
 //   return acc + cur;
@@ -282,7 +282,8 @@ for (const key in info) {
 // ======================= REST PARAMETER =====================
 
 // const addition = (a, b, ...rest) => {
-//   console.log(a, b, ...rest);
+//   console.log(a, b);
+//   console.log(rest);
 // };
 
 // addition(1, 2, 3, 4, 5);
@@ -422,7 +423,166 @@ for (const key in info) {
 
 // userName = 'Guru';
 
-let obj1 = { userName: 'Nihar' };
-let obj2 = obj1;
+// let obj1 = { userName: 'Nihar' };
+// let obj2 = obj1;
 
 // obj1.userName = 'Guru';
+
+// ===============
+
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+// ==================
+
+// let i = 1;
+
+// while (i < 10) {
+//   console.log(i);
+//   i++;
+// }
+
+// ==================
+
+// let i = 1;
+
+// do {
+//   console.log(i);
+//   i++;
+// } while (i < 10);
+
+// ===================
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for (const key in arr) {
+//   console.log(key);
+// }
+
+// =============
+
+// for (const ele of arr) {
+//   console.log(ele);
+// }
+
+// =============
+
+// arr.forEach((ele, ind, arr) => {
+//   console.log(ele);
+// });
+
+// =========
+
+// function helloFun() {
+//   console.log('Hello');
+// }
+
+// helloFun();
+// helloFun();
+// helloFun();
+
+// ============
+
+// const arrowFun = () => {
+//   console.log('arrow function');
+
+//   console.log('start');
+//   return;
+
+//   console.log('end');
+// };
+
+// arrowFun();
+// ================
+
+// debugger;
+
+// console.log(x);
+// console.log(y);
+// console.log(z);
+
+// var x = 10;
+// let y = 10;
+// const z = 10;
+
+// ==============
+
+// function outer() {
+//   const x = 10;
+
+//   function inner() {
+//     const y = 20;
+
+//     console.log(x);
+//   }
+
+//   console.log(y);
+//   inner();
+// }
+
+// outer();
+
+// ==============
+
+// const fun1 = () => {
+//   console.log('function');
+// };
+
+// const fun2 = (fun) => {
+//   fun();
+// };
+
+// fun2(fun1);
+
+// ========
+
+// function fun1(name, callback) {
+//   callback();
+//   console.log(name);
+// }
+
+// function fun2() {
+//   console.log('Hello');
+// }
+
+// fun1('Nihar', fun2);
+
+// ============================
+// const anony = function () {
+//   console.log('Hello');
+// };
+
+// anony();
+
+// ============================
+
+// function fun(params) {
+//   console.log('Hello world');
+// }
+
+// const store = fun();
+
+// ============================
+
+// const user = 'Nihar';
+
+// console.log(`Hello ${user}`);
+
+// =====================
+
+// let arr = [1, 2, 3];
+
+// let arr2 = [...arr];
+// console.log('arr2:', arr2);
+
+// const obj = {
+//   user: 'Nihar',
+//   age: 24,
+// };
+
+// const obj2 = { ...obj };
+
+// obj2.age = 30;
+// console.log('obj2:', obj);
+// console.log('obj2:', obj2);

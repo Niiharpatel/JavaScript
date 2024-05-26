@@ -7,7 +7,7 @@ const user = {
   //   },
 };
 
-// console.log(user.add && user.add.city);
+console.log(user.add && user.add.city);
 // ======== OR ==========
 // console.log(user.add?.city);
 // ===================================
